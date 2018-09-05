@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="AdminQuickBar"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="75aab39b-b43c-48a2-8a3d-fe97093dd070"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+</Elements>
