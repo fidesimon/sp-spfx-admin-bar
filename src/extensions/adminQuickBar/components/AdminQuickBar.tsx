@@ -82,6 +82,11 @@ export default class AdminQuickBar extends React.Component<IAdminQuickBarProps>{
                     key: 'audienceTargeting',
                     name: 'Audience Targeting',
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/ListEnableTargeting.aspx?List={${this.props.context.pageContext.list.id}}`
+                },
+                {
+                    key: 'listPermissions',
+                    name: 'List Permissions',
+                    href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/user.aspx?obj={${this.props.context.pageContext.list.id}},list&List={${this.props.context.pageContext.list.id}}`
                 }],
             }
         ];
