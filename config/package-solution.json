@@ -3,7 +3,7 @@
   "solution": {
     "name": "sp-admin-quick-bar-client-side-solution",
     "id": "2acadef6-5287-4509-8dd7-d4dc204b1c22",
-    "version": "1.0.0.0",
+    "version": "1.0.0.2",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "features": [

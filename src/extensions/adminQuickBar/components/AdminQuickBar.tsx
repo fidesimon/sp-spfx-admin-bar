@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
 import { ApplicationCustomizerContext } from '@microsoft/sp-application-base';
-import { IContextualMenuItem, ContextualMenu, ContextualMenuItemType } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { IContextualMenuItem, ContextualMenuItemType } from 'office-ui-fabric-react/lib/ContextualMenu';
 
 export interface IAdminQuickBarProps {
     context: ApplicationCustomizerContext;
@@ -25,6 +24,11 @@ export default class AdminQuickBar extends React.Component<IAdminQuickBarProps>{
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/settings.aspx`
                 },
                 {
+                    key: 'permissionsHeader',
+                    itemType: ContextualMenuItemType.Header,
+                    name: 'Manage Permissions and Groups'
+                },
+                {
                     key: 'peopleandgroups',
                     name: 'People and Groups',
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/groups.aspx`
@@ -40,14 +44,29 @@ export default class AdminQuickBar extends React.Component<IAdminQuickBarProps>{
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/mngsiteadmin.aspx`
                 },
                 {
+                    key: 'siteActions',
+                    itemType: ContextualMenuItemType.Header,
+                    name: 'Site Actions'
+                },
+                {
                     key: 'sitefeatures',
                     name: 'Manage Site Features',
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/ManageFeatures.aspx`
                 },
                 {
+                    key: 'sitecollectionadministration',
+                    itemType: ContextualMenuItemType.Header,
+                    name: 'Site Collection Administration'
+                },
+                {
                     key: 'adminrecyclebin',
                     name: 'Admin Recycle Bin',
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/AdminRecycleBin.aspx`
+                },
+                {
+                    key: 'webdesignergalleries',
+                    itemType: ContextualMenuItemType.Header,
+                    name: 'Web Designer Galleries'
                 },
                 {
                     key: 'sitecolumns',
@@ -58,6 +77,11 @@ export default class AdminQuickBar extends React.Component<IAdminQuickBarProps>{
                     key: 'sitects',
                     name: 'Site Content Types',
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/mngctype.aspx`
+                },
+                {
+                    key: 'siteadministration',
+                    itemType: ContextualMenuItemType.Header,
+                    name: 'Site Administration'
                 },
                 {
                     key: 'regionalsettings',
@@ -74,14 +98,29 @@ export default class AdminQuickBar extends React.Component<IAdminQuickBarProps>{
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/listedit.aspx?List={${this.props.context.pageContext.list.id}}`
                 },
                 {
+                    key: 'generalsettings',
+                    itemType: ContextualMenuItemType.Header,
+                    name: 'General Settings'
+                },
+                {
                     key: 'advancedSettings',
                     name: 'Advanced Settings',
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/advsetng.aspx?List={${this.props.context.pageContext.list.id}}`
                 },
                 {
+                    key: 'versioningSettings',
+                    name: 'Versioning Settings',
+                    href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/LstSetng.aspx?List={${this.props.context.pageContext.list.id}}`
+                },
+                {
                     key: 'audienceTargeting',
                     name: 'Audience Targeting',
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/ListEnableTargeting.aspx?List={${this.props.context.pageContext.list.id}}`
+                },
+                {
+                    key: 'permissionsandmanagement',
+                    itemType: ContextualMenuItemType.Header,
+                    name: 'Permissions and Management'
                 },
                 {
                     key: 'listPermissions',
