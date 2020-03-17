@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://szymekdev.sharepoint.com/sites/SzymekDev",
       "customActions": {
         "75aab39b-b43c-48a2-8a3d-fe97093dd070": {
           "location": "ClientSideExtension.ApplicationCustomizer",
@@ -15,7 +15,7 @@
       }
     },
     "adminQuickBar": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://szymekdev.sharepoint.com/sites/SzymekDev",
       "customActions": {
         "75aab39b-b43c-48a2-8a3d-fe97093dd070": {
           "location": "ClientSideExtension.ApplicationCustomizer",
