@@ -77,6 +77,11 @@ export default class AdminQuickBar extends React.Component<IAdminQuickBarProps>{
                     key: 'advancedSettings',
                     name: 'Advanced Settings',
                     href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/advsetng.aspx?List={${this.props.context.pageContext.list.id}}`
+                },
+                {
+                    key: 'audienceTargeting',
+                    name: 'Audience Targeting',
+                    href: `${this.props.context.pageContext.web.serverRelativeUrl}/_layouts/15/ListEnableTargeting.aspx?List={${this.props.context.pageContext.list.id}}`
                 }],
             }
         ];
